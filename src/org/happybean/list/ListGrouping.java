@@ -18,7 +18,7 @@ public class ListGrouping {
 
         List<Person> list = Person.getPersonListData();
         Map<Integer, List<Person>> personMap = personListGroupingByAge(list);
-        System.out.println("personMap:"+personMap);
+        System.out.println("personMap:" + personMap);
     }
 
     public static Map<Integer, List<Person>> personListGroupingByAge(List<Person> list) {

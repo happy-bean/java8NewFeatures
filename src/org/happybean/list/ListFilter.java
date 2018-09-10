@@ -16,7 +16,7 @@ public class ListFilter {
 
         List<Person> list = Person.getPersonListData();
         List<Person> personFilterList = personListFilterByAge(list);
-        System.out.println("personFilterList:"+personFilterList);
+        System.out.println("personFilterList:" + personFilterList);
     }
 
     public static List<Person> personListFilterByAge(List<Person> list) {
