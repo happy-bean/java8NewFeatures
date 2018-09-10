@@ -12,11 +12,13 @@ import java.util.List;
 public class ListForEach {
 
     public static void main(String[] args) {
+
         List<Person> list = Person.getPersonListData();
         forEachPerson(list);
     }
 
     public static void forEachPerson(List<Person> list) {
+
         list.stream().forEach(person -> {
             System.out.println(person);
         });

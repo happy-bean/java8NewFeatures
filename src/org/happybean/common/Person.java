@@ -20,7 +20,8 @@ public class Person {
         List<Person> list = new LinkedList<>();
         list.add(new Person("a", 18));
         list.add(new Person("b", 19));
-        list.add(new Person("a", 20));
+        list.add(new Person("c", 20));
+        list.add(new Person("d", 20));
         return list;
     }
 
