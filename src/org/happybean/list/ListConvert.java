@@ -28,7 +28,7 @@ public class ListConvert {
 
         System.out.println("arrays:" + Arrays.toString(arrays));
 
-        List<Person> persons = getPersonListData();
+        List<Person> persons = Person.getPersonListData();
 
         List<Student> studens = personListConvertToStudentList(persons);
 
@@ -55,15 +55,6 @@ public class ListConvert {
 
         String[] array = list.stream().toArray(String[]::new);
         return array;
-    }
-
-    public static List<Person> getPersonListData() {
-
-        List<Person> list = new LinkedList<>();
-        list.add(new Person("a", 19));
-        list.add(new Person("b", 20));
-        list.add(new Person("a", 30));
-        return list;
     }
 
     public static List<Student> personListConvertToStudentList(List<Person> list) {
