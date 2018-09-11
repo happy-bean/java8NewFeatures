@@ -22,7 +22,7 @@ public class OptionalIsPresent {
 
     public static void printOptionalIsPresent(Optional<String> optional) {
 
-        System.out.println("Optional.isPresent:" + optional.isPresent());
+        System.out.println("optional.isPresent:" + optional.isPresent());
     }
 
 }

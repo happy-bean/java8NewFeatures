@@ -40,7 +40,7 @@ public class ListConvert {
 
     public static String[] getStringArrayData() {
 
-        String[] arrays = new String[]{"a", "b", "c" };
+        String[] arrays = new String[]{"a", "b", "c"};
         return arrays;
     }
 
