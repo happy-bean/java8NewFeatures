@@ -23,6 +23,6 @@ public class OptionalFilter {
 
     public static void printOptionalFilter(Optional<String> optional) {
 
-        System.out.println(optional.filter(o -> o.length() > 5).orElse("length < = 5"));
+        System.out.println("optional.filter:" + optional.filter(o -> o.length() > 5).orElse("length < = 5"));
     }
 }
