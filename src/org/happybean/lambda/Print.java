@@ -6,21 +6,19 @@ import java.util.List;
 /**
  * @author wgt
  * @date 2018-09-11
- * @description list中应用
+ * @description 方法引用（Method reference）
  **/
-public class LambdaList {
+public class Print {
 
     public static void main(String[] args) {
 
         String[] a = {"a", "b", "c"};
         List<String> list = Arrays.asList(a);
-        forEach(list);
+        list.forEach(Print::myPrint);
     }
 
-    public static void forEach(List<String> list) {
+    public static void myPrint(Object object) {
 
-        list.stream().forEach(str -> {
-            System.out.println(str);
-        });
+        System.out.println("myprint:" + object.toString());
     }
 }
