@@ -26,16 +26,6 @@ public class ListConvert {
         arrays = listConvertToArray(list);
 
         System.out.println("arrays:" + Arrays.toString(arrays));
-
-        List<Person> persons = Person.getPersonListData();
-
-        List<Student> studens = personListConvertToStudentList(persons);
-
-        System.out.println("studentList:" + studens);
-
-        List<String> personNames = personListConvertToPersonNameList(persons);
-
-        System.out.println("personNameList:" + personNames);
     }
 
     public static String[] getStringArrayData() {
@@ -56,16 +46,4 @@ public class ListConvert {
         return array;
     }
 
-    public static List<Student> personListConvertToStudentList(List<Person> list) {
-
-        List<Student> studentList =
-                list.stream().map(person -> new Student(person.getName(), person.getAge())).collect(Collectors.toList());
-        return studentList;
-    }
-
-    public static List<String> personListConvertToPersonNameList(List<Person> list) {
-
-        List<String> nameList = list.stream().map(Person::getName).collect(Collectors.toList());
-        return nameList;
-    }
 }
