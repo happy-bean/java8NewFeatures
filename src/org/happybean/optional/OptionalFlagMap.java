@@ -27,6 +27,6 @@ public class OptionalFlagMap {
 
     public static void printOptionalFlagMap(Optional optional) {
 
-        System.out.println(optional.flatMap(o -> Optional.of("optional flatMap")).orElse("failed"));
+        System.out.println("Optional.flatMap:"+optional.flatMap(o -> Optional.of("optional flatMap")).orElse("failed"));
     }
 }
