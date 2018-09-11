@@ -1,4 +1,4 @@
-package org.happybean.list;
+package org.happybean.stream;
 
 /**
  * @author wgt

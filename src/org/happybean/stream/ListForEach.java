@@ -1,4 +1,4 @@
-package org.happybean.list;
+package org.happybean.stream;
 
 import org.happybean.common.Person;
 
