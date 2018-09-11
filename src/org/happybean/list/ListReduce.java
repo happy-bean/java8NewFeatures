@@ -19,7 +19,7 @@ public class ListReduce {
 
     public static void main(String[] args) {
 
-        String[] a = {"a", "b", "c"};
+        String[] a = {"j", "a", "v", "a"};
         List<String> list = Arrays.asList(a);
 
         Optional<String> optional = reduce(list);
@@ -29,7 +29,7 @@ public class ListReduce {
     public static Optional<String> reduce(List<String> list) {
 
         Optional<String> optional =
-                list.stream().sorted().reduce((s1, s2) -> s1 + "#" + s2);
+                list.stream().reduce((s1, s2) -> s1 + s2);
         return optional;
     }
 }
