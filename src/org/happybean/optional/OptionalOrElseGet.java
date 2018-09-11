@@ -8,21 +8,21 @@ import static org.happybean.optional.OptionalOf.stringConvertToOptional;
 /**
  * @author wgt
  * @date 2018-09-11
- * @description orElse:如果创建的Optional中有值存在，则返回此值，否则返回一个默认值
+ * @description orElseGet:如果创建的Optional中有值存在，则返回此值，否则返回一个由Supplier接口生成的值
  **/
-public class OptionalOrElse {
+public class OptionalOrElseGet {
 
     public static void main(String[] args) {
 
         Optional<String> optionalStr = stringConvertToOptional("java1.8 Optional");
-        printOptionalOrElse(optionalStr);
+        printOptionalOrElseGet(optionalStr);
 
         Optional optionalEmpty = createEmptyOptional();
-        printOptionalOrElse(optionalEmpty);
+        printOptionalOrElseGet(optionalEmpty);
     }
 
-    public static void printOptionalOrElse(Optional optional) {
+    public static void printOptionalOrElseGet(Optional optional) {
 
-        System.out.println("optional.orElse:" + optional.orElse("Optional orElse"));
+        System.out.println("optional.orElseGet:" + optional.orElseGet(()->"Optional orElseGet"));
     }
 }
