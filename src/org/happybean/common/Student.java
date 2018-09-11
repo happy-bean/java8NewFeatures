@@ -12,6 +12,11 @@ public class Student {
         this.age = age;
     }
 
+    public Student(Person person) {
+        this.name = person.getName();
+        this.age = person.getAge();
+    }
+
     private String name;
 
     private int age;
