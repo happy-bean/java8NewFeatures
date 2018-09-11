@@ -5,7 +5,7 @@ package org.happybean.lambda;
  * @date 2018-09-11
  * @description lambda计算器
  **/
-public class LambdaCalculator {
+public class Calculator {
 
     public static void main(String[] args) {
 
