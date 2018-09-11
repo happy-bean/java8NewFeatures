@@ -11,7 +11,7 @@ public class OptionalEmpty {
 
     public static void main(String[] args) {
 
-        Optional<String> optionalEmpty = createEmptyOptional();
+        Optional optionalEmpty = createEmptyOptional();
         System.out.println("optionalEmpty:" + optionalEmpty);
     }
 
@@ -20,5 +20,4 @@ public class OptionalEmpty {
         Optional optional = Optional.empty();
         return optional;
     }
-
 }

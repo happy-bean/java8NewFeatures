@@ -23,5 +23,4 @@ public class OptionalOf {
         Optional<String> optional = Optional.of(str);
         return optional;
     }
-
 }

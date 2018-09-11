@@ -8,7 +8,7 @@ import java.util.Optional;
  * @description ofNullable:把指定的值封装为Optional对象，如果指定的值为null，则创建一个空的Optional对象
  **/
 public class OptionalOfNullable {
-    
+
     public static void main(String[] args) {
 
         Optional<String> optionalStr = stringConvertToOptional("java1.8 Optional");
