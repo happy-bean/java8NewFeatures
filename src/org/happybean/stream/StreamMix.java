@@ -23,6 +23,5 @@ public class StreamMix {
                 distinct().mapToInt(num -> num * 2).
                 peek(System.out::println).skip(2).limit(4).sum();
         return sum;
-
     }
 }
