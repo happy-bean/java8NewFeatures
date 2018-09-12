@@ -18,7 +18,7 @@ public class MapForEach {
         forEach(map);
     }
 
-    private static void forEach(Map<Integer, Person> map) {
+    public static void forEach(Map<Integer, Person> map) {
 
         map.forEach((id, person) -> {
             System.out.println(id + ":" + person.toString());
