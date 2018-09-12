@@ -20,11 +20,10 @@ public class StreamPeek {
 
     public static List<String> peek() {
         List<String> list = Stream.of("a", "b", "c", "d")
-                .peek(e -> System.out.println("Peeked value: " + e))
+                .peek(e -> System.out.println("peeked value: " + e))
                 .map(String::toUpperCase)
-                .peek(e -> System.out.println("Mapped value: " + e))
+                .peek(e -> System.out.println("mapped value: " + e))
                 .collect(Collectors.toList());
-
         return list;
     }
 }
