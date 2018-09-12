@@ -1,7 +1,9 @@
 package org.happybean.common;
 
+import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Map;
 
 /**
  * @author wgt
@@ -23,6 +25,16 @@ public class Person {
         list.add(new Person("c", 20));
         list.add(new Person("d", 20));
         return list;
+    }
+
+    public static Map<Integer, Person> getPersonMapData() {
+
+        Map<Integer, Person> map = new HashMap<>();
+        map.put(1, new Person("a", 18));
+        map.put(2, new Person("b", 19));
+        map.put(3, new Person("c", 20));
+        map.put(4, new Person("d", 20));
+        return map;
     }
 
     private String name;
