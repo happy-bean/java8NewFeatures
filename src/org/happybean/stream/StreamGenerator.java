@@ -12,9 +12,15 @@ import java.util.stream.Stream;
  **/
 public class StreamGenerator {
 
-    public static List<Double> generator() {
+    public static void main(String[] args) {
+
+        Stream<Double> stream = generator();
+        stream.limit(10).forEach(System.out::println);
+    }
+
+    public static Stream<Double> generator() {
 
         Stream.generate(Math::random);
-        return Stream.generate(Math::random).collect(Collectors.toList());
+        return Stream.generate(Math::random);
     }
 }
