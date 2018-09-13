@@ -37,5 +37,6 @@ class Main{
 
         Hint[] hints2 = Demo2.class.getAnnotationsByType(Hint.class);
         System.out.println(hints2.length);
+        //TODO
     }
 }
