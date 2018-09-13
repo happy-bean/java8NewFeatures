@@ -14,10 +14,10 @@ public class TimezonesDemo {
 
         System.out.println(ZoneId.getAvailableZoneIds());
 
-        ZoneId zone1 = zoneIdOf("Europe/Berlin");
+        ZoneId zone1 = zoneIdOf("Asia/Aden");
         System.out.println(zone1.getRules());
 
-        ZoneId zone2 = zoneIdOf("Brazil/East");
+        ZoneId zone2 = zoneIdOf("America/Cuiaba");
         System.out.println(zone2.getRules());
     }
 
