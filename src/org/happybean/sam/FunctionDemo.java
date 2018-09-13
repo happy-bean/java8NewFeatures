@@ -9,7 +9,7 @@ import java.util.function.Function;
  **/
 public class FunctionDemo {
 
-    public static void main(String[] args) {
+    public static void demo() {
 
         Function<String, Integer> toInteger = Integer::valueOf;
         toInteger.apply("2018");

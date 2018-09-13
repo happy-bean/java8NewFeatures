@@ -12,6 +12,11 @@ import java.util.Map;
  **/
 public class Person {
 
+    public Person() {
+        this.name = "init";
+        this.age = 0;
+    }
+
     public Person(String name, int age) {
         this.name = name;
         this.age = age;
