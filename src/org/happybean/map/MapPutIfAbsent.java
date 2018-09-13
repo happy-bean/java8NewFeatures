@@ -9,7 +9,7 @@ import java.util.Map;
  * @date 2018-09-12
  * @description putIfAbsent:如果当前Map不存在键key或者该key关联的值为null那么就执行put(key,value)；否则便不执行put操作。
  **/
-public class MapPut {
+public class MapPutIfAbsent {
 
     public static void main(String[] args) {
 
