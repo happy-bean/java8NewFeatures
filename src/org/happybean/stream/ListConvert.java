@@ -1,8 +1,5 @@
 package org.happybean.stream;
 
-import org.happybean.common.Person;
-import org.happybean.common.Student;
-
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
