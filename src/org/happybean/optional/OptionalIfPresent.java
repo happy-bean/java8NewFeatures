@@ -23,7 +23,7 @@ public class OptionalIfPresent {
     public static void optionalIfPresent(Optional optional) {
 
         optional.ifPresent(o -> {
-            System.out.println("optional:" + optional);
+            System.out.println("optional:" + o);
         });
     }
 }
