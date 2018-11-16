@@ -1,2 +1,2 @@
-# java8NeweFatures
+# java8NewFeatures
 java1.8新特性
